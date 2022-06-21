@@ -27,7 +27,7 @@ function setup() {
  	World.add(world, ground);
 
 	//Create the Bodies Here.
-	paperball = new Paperball(100,649,70);
+	paperball = new Paperball(100,200,40);
 	
 	Engine.run(engine);
   
@@ -45,6 +45,6 @@ drawSprites();
 
 function keyPressed(){
 	if (keyCode === UP_ARROW){
-		Matter.Body.applyForce(paperball.body,paperball.body.position,{x:100,y:-300});
+		Matter.Body.applyForce(paperball.body,paperball.body.position,{x:50,y:-300});
 	}
 }
